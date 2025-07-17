@@ -1,0 +1,3 @@
+EF CLI Command -> dotnet tool install --global dotnet-ef
+Create Migrations -> dotnet ef migrations add InitialCreate
+Update Database -> dotnet ef database update

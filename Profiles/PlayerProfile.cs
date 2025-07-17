@@ -10,6 +10,7 @@ namespace Core_Web_API.Profiles
         {
             CreateMap<Player, ReadPlayerDto>(); // player -> dto
             CreateMap<CreatePlayerDto, Player>(); // dto -> player
+            CreateMap<LoginPlayerDto, Player>();
         }
     }
 }

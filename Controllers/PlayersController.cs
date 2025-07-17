@@ -5,6 +5,7 @@ using Core_Web_API.Models.Entities;
 using Microsoft.AspNetCore.Mvc;
 using Microsoft.EntityFrameworkCore;
 using AutoMapper;
+using Microsoft.AspNetCore.Authorization;
 
 namespace Core_Web_API.Controllers
 {
@@ -21,6 +22,7 @@ namespace Core_Web_API.Controllers
             _mapper = mapper;
         }
 
+        [Authorize]
         [HttpGet]
         public async Task<IActionResult> GetPlayers()
         {
